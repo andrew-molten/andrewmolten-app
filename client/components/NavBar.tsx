@@ -1,7 +1,37 @@
+import { NavLink } from 'react-router-dom'
+
 function NavBar() {
   return (
-    <nav>
-      <h1 className="headerFont">Andrew Molten</h1>
+    <nav className="navbar">
+      <h1 className="header">
+        <NavLink to={'/'}>Andrew Molten</NavLink>
+      </h1>
+      <div className="nav-links">
+        <NavLink
+          to={'/'}
+          className={({ isActive }) =>
+            isActive ? 'nav-link active-link' : 'nav-link'
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to={'/portfolio'}
+          className={({ isActive }) =>
+            isActive ? 'nav-link active-link' : 'nav-link'
+          }
+        >
+          Portfolio
+        </NavLink>
+        <NavLink
+          to={'/blog'}
+          className={({ isActive }) =>
+            isActive ? 'nav-link active-link' : 'nav-link'
+          }
+        >
+          Blog
+        </NavLink>
+      </div>
     </nav>
   )
 }

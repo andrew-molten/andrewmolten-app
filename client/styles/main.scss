@@ -3,8 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.headerFont {
+:root {
+  --primary: #d85eab;
+  --secondary: #8c60c6;
+}
+
+.navbar {
+  background-color: var(--secondary);
+  @apply flex flex-col;
+}
+
+.nav-link {
+  @apply inline-block pl-9 text-xl transition duration-300 ease-in-out hover:scale-110 hover:opacity-65;
+}
+.nav-links {
+  @apply flex-row pb-2;
+}
+
+.active-link {
+  @apply underline;
+}
+
+.header {
   font-family: Rubik Moonrocks;
   font-size: 2.7em;
   font-weight: 300;
+  @apply flex-row self-center;
 }
