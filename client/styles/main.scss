@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Honk&family=Lato&family=Life+Savers&family=Poiret+One&family=Rubik+Moonrocks&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.headerFont {
+  font-family: Rubik Moonrocks;
+  font-size: 2.7em;
+  font-weight: 300;
+}

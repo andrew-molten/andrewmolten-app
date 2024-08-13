@@ -1,10 +1,11 @@
 import { Outlet } from 'react-router-dom'
+import NavBar from './NavBar'
 
 export default function Layout() {
   return (
     <>
       <header>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
+        <NavBar />
       </header>
       <main>
         <Outlet />
