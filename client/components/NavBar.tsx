@@ -16,12 +16,12 @@ function NavBar() {
           Home
         </NavLink>
         <NavLink
-          to={'/portfolio'}
+          to={'/projects'}
           className={({ isActive }) =>
             isActive ? 'nav-link active-link' : 'nav-link'
           }
         >
-          Portfolio
+          Projects
         </NavLink>
         <NavLink
           to={'/blog'}
