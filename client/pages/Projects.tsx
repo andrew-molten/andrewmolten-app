@@ -1,5 +1,5 @@
 import ProjectCard from '../components/projects/ProjectCard'
-import ProjectDescription from '../components/projects/ProjectDescription'
+// import ProjectDescription from '../components/projects/ProjectDescription'
 import {
   languageBuddyDescription,
   languageBuddyImages,
@@ -15,9 +15,16 @@ function Projects() {
   // What it does? perhaps through the images?
   // techstack?
   return (
-    <div>
-      <ProjectDescription data={languageBuddyDescription} />
-      <ProjectCard data={languageBuddyImages} />
+    <div className="projects-container">
+      {/* <ProjectDescription data={languageBuddyDescription} /> */}
+      <ProjectCard
+        images={languageBuddyImages}
+        data={languageBuddyDescription}
+      />
+      <ProjectCard
+        images={languageBuddyImages}
+        data={languageBuddyDescription}
+      />
       {/* <img src={lbStory} alt="language buddy home page" /> */}
     </div>
   )

@@ -1,14 +1,24 @@
-import { ProjectCardData } from '../../../models/models'
+import { ProjectCardData, ProjectData } from '../../../models/models'
 
 interface Props {
-  data: ProjectCardData
+  images: ProjectCardData
+  data: ProjectData
 }
 
-function ProjectCard({ data }: Props) {
+function ProjectCard({ images, data }: Props) {
   return (
-    <div>
-      <img src={data.main} alt="language buddy home page" />
-    </div>
+    <button className="project-card">
+      <div className="project-card-description">
+        <h2>{data.heading}</h2>
+        <p>{data.intro}</p>
+      </div>
+
+      <img
+        src={images.main}
+        alt="language buddy home page"
+        className="project-card-img"
+      />
+    </button>
   )
 }
 export default ProjectCard

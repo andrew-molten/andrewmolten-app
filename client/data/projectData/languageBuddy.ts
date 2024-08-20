@@ -1,4 +1,4 @@
-import storyImg from '../../../public/images/languageBuddyStory.png'
+import storyImg from '../../../images/languageBuddyStory.png'
 
 export const languageBuddyDescription = {
   heading: 'Language Buddy',

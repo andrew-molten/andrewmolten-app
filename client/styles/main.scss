@@ -30,3 +30,43 @@
   font-weight: 300;
   @apply flex-row self-center;
 }
+
+.project-card {
+  // width: 500px;
+  // align-items: center;
+  // justify-content: space-evenly;
+  // margin-top: 2em;
+  width: 500px;
+  // height: 500px;
+  @apply flex cursor-pointer flex-col items-center justify-center rounded-xl;
+}
+
+// .project-card-description {
+//   margin-right: 2em;
+//   margin-left: 2em;
+// }
+
+.project-card-img {
+  width: 50%;
+  height: auto;
+  // margin: auto;
+  // @apply content-center;
+}
+.projects-container {
+  @apply flex flex-wrap content-start justify-center gap-5;
+}
+
+// .pc-left {
+//   justify-content: start;
+// }
+
+// .pc-right {
+//   justify-content: end;
+// }
+
+@media only screen and (max-width: 600px) {
+  .project-card-img {
+    width: 50%;
+    height: auto;
+  }
+}
